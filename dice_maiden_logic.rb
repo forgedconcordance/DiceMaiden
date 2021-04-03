@@ -90,14 +90,14 @@ def check_roll(event)
       event.respond 'Please roll a dice value 2 or greater'
       return true
     end
-    if @dice_check > 100
-      event.respond 'Please roll dice up to d100'
+    if @dice_check > 2000
+      event.respond 'Please roll dice up to d2000'
       return true
     end
     # Check for too large of dice pools
     @dice_check = dice_request.scan(/(\d+)d/i).first.join.to_i
-    if @dice_check > 500
-      event.respond 'Please keep the dice pool below 500'
+    if @dice_check > 10
+      event.respond 'Please keep the dice pool below 10'
       return true
     end
   end
