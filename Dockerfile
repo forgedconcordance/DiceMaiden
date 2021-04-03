@@ -9,5 +9,4 @@ RUN apk add --virtual build-dependencies build-base
 
 RUN bundle install
 
-
 CMD bundle exec ruby dice_maiden.rb 0 lite
