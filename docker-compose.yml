@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: humblemonk/dicemaiden
+    image: theforgedconcordance/dicemaiden:tfc
     container_name: dicemaiden
     volumes:
       - .env:/opt/DiceMaiden/.env
