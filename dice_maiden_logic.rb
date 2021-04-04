@@ -90,7 +90,7 @@ def check_roll(event)
       event.respond 'Please roll a dice value 2 or greater'
       return true
     end
-    if @dice_check > 2000
+    if @dice_check > 999
       event.respond 'Please roll dice up to d2000'
       return true
     end
