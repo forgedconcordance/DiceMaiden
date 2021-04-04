@@ -91,7 +91,7 @@ def check_roll(event)
       return true
     end
     if @dice_check > 999
-      event.respond 'Please roll dice up to d2000'
+      event.respond 'Please roll dice up to d999'
       return true
     end
     # Check for too large of dice pools
